@@ -1,0 +1,25 @@
+	ESERCIZI DI GROUP BY
+
+ESERCIZIO 1: 
+
+	SELECT YEAR(`enrolment_date`) AS `data_registrazione`, COUNT(*) AS`studenti_iscritti` 
+	FROM `students` 
+	GROUP BY `data_registrazione`;
+
+ESERCIZIO 2: 
+
+	SELECT `office_address` AS `indirizzo_ufficio`, COUNT(*) AS `conteggio_insegnanti_presenti` 
+	FROM `teachers` 
+	GROUP BY `indirizzo_ufficio`;
+
+ESERCIZIO 3: 
+
+	SELECT `exam_id` AS `esame`, AVG(`vote`) AS `voto_medio` 
+	FROM `exam_student` 
+	GROUP BY `esame` 
+
+ESERCIZIO 4: 
+
+	SELECT `department_id` AS `identificativo_dipartimenti`, COUNT(*) AS `numero_corsi` 
+	FROM `degrees` 
+	GROUP BY `identificativo_dipartimenti` 
